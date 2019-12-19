@@ -5,7 +5,6 @@
   <ItemGroup>
     <Compile Include="ast.fsx" />
     <Compile Include="TSCNParser.fsx" />
-    <Compile Include="Library.fsx" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FParsec" Version="1.0.3" />
