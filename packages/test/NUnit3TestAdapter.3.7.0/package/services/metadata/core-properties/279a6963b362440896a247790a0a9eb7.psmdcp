@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Charlie Poole</dc:creator>
+  <dc:description>A package including the NUnit 3 TestAdapter for Visual Studio 2012 onwards.  With this package you don't need to install the VSIX adapter package, and you don't need to upload the adapter to your TFS server.
+        
+Note that this package ONLY contains the adapter, not the NUnit framework.  You must also get the framework. You only need one such package for a solution. 
+
+The package works with Visual Studio 2012 and newer.</dc:description>
+  <dc:identifier>NUnit3TestAdapter</dc:identifier>
+  <version>3.7.0-dev-00395</version>
+  <keywords>test visualstudio testadapter nunit nunit3</keywords>
+  <lastModifiedBy>NuGet, Version=3.5.0.1938, Culture=neutral, PublicKeyToken=31bf3856ad364e35;Microsoft Windows NT 6.2.9200.0;.NET Framework 4.5</lastModifiedBy>
+</coreProperties>

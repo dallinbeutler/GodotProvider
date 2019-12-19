@@ -1,0 +1,11 @@
+FSharp.Core,4.3.4,Direct,Test,false,true
+Microsoft.NETCore.Platforms,3.1,Transitive,Test,false,true
+Microsoft.NETCore.Targets,3.1,Transitive,Test,false,true
+System.Runtime,4.3.1,Transitive,Test,false,true
+System.Reflection.Primitives,4.3,Transitive,Test,false,true
+System.Text.Encoding,4.3,Transitive,Test,false,true
+System.Threading.Tasks,4.3,Transitive,Test,false,true
+System.IO,4.3,Transitive,Test,false,true
+System.Reflection,4.3,Transitive,Test,false,true
+System.Runtime.Loader,4.3,Transitive,Test,false,true
+NUnit,3.6.1,Direct,Test,false,true

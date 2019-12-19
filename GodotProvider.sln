@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GodotProvider.Runtime", "src\GodotProvider.Runtime\GodotProvider.Runtime.fsproj", "{A9C83B4B-D75F-4A19-8ACF-680126C74FA7}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GodotProvider.DesignTime", "src\GodotProvider.DesignTime\GodotProvider.DesignTime.fsproj", "{61531F6B-A322-49E6-8EF8-C81523FF556B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GodotProvider.Tests", "tests\GodotProvider.Tests\GodotProvider.Tests.fsproj", "{19C356FE-7B08-4A9A-BEBA-4058768B03F6}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TSCN", "TSCN\TSCN.fsproj", "{31244F33-3CDD-4F52-8975-B3FDDC6F8929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9C83B4B-D75F-4A19-8ACF-680126C74FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C83B4B-D75F-4A19-8ACF-680126C74FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C83B4B-D75F-4A19-8ACF-680126C74FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C83B4B-D75F-4A19-8ACF-680126C74FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61531F6B-A322-49E6-8EF8-C81523FF556B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61531F6B-A322-49E6-8EF8-C81523FF556B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61531F6B-A322-49E6-8EF8-C81523FF556B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61531F6B-A322-49E6-8EF8-C81523FF556B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C356FE-7B08-4A9A-BEBA-4058768B03F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C356FE-7B08-4A9A-BEBA-4058768B03F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C356FE-7B08-4A9A-BEBA-4058768B03F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C356FE-7B08-4A9A-BEBA-4058768B03F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31244F33-3CDD-4F52-8975-B3FDDC6F8929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31244F33-3CDD-4F52-8975-B3FDDC6F8929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31244F33-3CDD-4F52-8975-B3FDDC6F8929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31244F33-3CDD-4F52-8975-B3FDDC6F8929}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19C356FE-7B08-4A9A-BEBA-4058768B03F6} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E70B7C51-0949-4322-B735-E6AE9657F765}
+	EndGlobalSection
+EndGlobal

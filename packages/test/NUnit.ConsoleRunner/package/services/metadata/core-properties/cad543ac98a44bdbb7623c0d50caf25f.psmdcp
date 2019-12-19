@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Charlie Poole,  Rob Prouse</dc:creator>
+  <dc:description>This package includes the nunit3-console runner and test engine for version 3 of the NUnit unit-testing framework.
+
+      Any extensions, if needed, may be installed as separate packages.</dc:description>
+  <dc:identifier>NUnit.ConsoleRunner</dc:identifier>
+  <version>3.10.0</version>
+  <keywords>nunit test testing tdd runner</keywords>
+  <lastModifiedBy>NuGet, Version=4.0.0.2283, Culture=neutral, PublicKeyToken=31bf3856ad364e35;Microsoft Windows NT 6.2.9200.0;.NET Framework 4.5</lastModifiedBy>
+</coreProperties>

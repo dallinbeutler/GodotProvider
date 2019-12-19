@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NUnit.Extension.VSProjectLoader</id>
+    <version>3.8.0</version>
+    <title>NUnit 3 - Visual Studio Project Loader Extension</title>
+    <authors>Charlie Poole</authors>
+    <owners>Charlie Poole</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://nunit.org/nuget/nunit3-license.txt</licenseUrl>
+    <projectUrl>http://nunit.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/nunit/resources/master/images/icon/nunit_256.png</iconUrl>
+    <description>This extension allows NUnit to recognize and load solutions and projects in Visual Studio format. It supports files of type .sln, .csproj, .vbproj, .vjsproj, .vcproj and .fsproj.</description>
+    <summary>NUnit Engine extension for loading Visual Studio formatted projects.</summary>
+    <releaseNotes>See https://raw.githubusercontent.com/nunit/vs-project-loader/master/CHANGES.txt</releaseNotes>
+    <copyright>Copyright (c) 2018 Charlie Poole</copyright>
+    <tags>nunit test testing tdd runner</tags>
+  </metadata>
+</package>

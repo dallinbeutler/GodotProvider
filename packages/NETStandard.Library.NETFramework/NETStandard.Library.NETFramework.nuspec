@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>NETStandard.Library.NETFramework</id>
+    <version>2.0.0-preview2-25405-01</version>
+    <title>NETStandard.Library.NETFramework (deprecated)</title>
+    <authors>Microsoft</authors>
+    <owners>microsoft,dotnetframework</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</licenseUrl>
+    <projectUrl>https://dot.net/</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <description>This package is deprecated. To consume .NET Standard libraries from .NET Framework in VS2017 15.3, you only need the .NET Core 2.0 SDK installed. For VS 2015, you'll need NuGet client 3.6 or higher.
+
+Adds NETStandard2.0 support to .NET Framework. 
+029cf57733b7ec6c1dd8a13857e800b9a8d97192 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</releaseNotes>
+    <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
+    <serviceable>true</serviceable>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Microsoft.NETCore.Platforms" version="2.0.0-preview2-25405-01" />
+        <dependency id="NETStandard.Library" version="2.0.0-preview2-25401-01" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

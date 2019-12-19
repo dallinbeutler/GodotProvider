@@ -1,0 +1,8 @@
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\bin\Release\netstandard2.0\GodotProvider.Runtime.deps.json
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\bin\Release\netstandard2.0\GodotProvider.Runtime.dll
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\bin\Release\netstandard2.0\GodotProvider.Runtime.pdb
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\obj\Release\netstandard2.0\GodotProvider.Runtime.fsprojAssemblyReference.cache
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\obj\Release\netstandard2.0\GodotProvider.Runtime.AssemblyInfoInputs.cache
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\obj\Release\netstandard2.0\GodotProvider.Runtime.AssemblyInfo.fs
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\obj\Release\netstandard2.0\GodotProvider.Runtime.dll
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\src\GodotProvider.Runtime\obj\Release\netstandard2.0\GodotProvider.Runtime.pdb

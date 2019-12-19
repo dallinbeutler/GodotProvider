@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NUnit.Extension.NUnitV2Driver</id>
+    <version>3.8.0</version>
+    <title>NUnit 3 - NUnit V2 Framework Driver Extension</title>
+    <authors>Charlie Poole</authors>
+    <owners>Charlie Poole</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://nunit.org/nuget/nunit3-license.txt</licenseUrl>
+    <projectUrl>http://nunit.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/nunit/resources/master/images/icon/nunit_256.png</iconUrl>
+    <description>This extension allows NUnit to load and run tests compiled against earlier versions of the NUnit framework. Versions 2.0 through 2.7 are supported.</description>
+    <summary>NUnit Engine extension allowing execution of tests using NUnit 2.x.</summary>
+    <releaseNotes>See https://raw.githubusercontent.com/nunit/nunit-v2-framework-driver/master/CHANGES.txt</releaseNotes>
+    <copyright>Copyright (c) 2014-2019 Charlie Poole</copyright>
+    <tags>nunit test testing tdd runner</tags>
+    <repository type="git" url="https://github.com/nunit/nunit-v2-framework-driver" />
+  </metadata>
+</package>

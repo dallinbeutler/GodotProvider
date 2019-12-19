@@ -1,0 +1,8 @@
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\bin\Debug\netstandard2.0\TSCN.deps.json
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\bin\Debug\netstandard2.0\TSCN.dll
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\obj\Debug\netstandard2.0\TSCN.fsprojAssemblyReference.cache
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\obj\Debug\netstandard2.0\TSCN.AssemblyInfoInputs.cache
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\obj\Debug\netstandard2.0\TSCN.AssemblyInfo.fs
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\bin\Debug\netstandard2.0\TSCN.pdb
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\obj\Debug\netstandard2.0\TSCN.dll
+C:\IAS_Projects\IRAD\FSharp\GodotProvider\TSCN\obj\Debug\netstandard2.0\TSCN.pdb

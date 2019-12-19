@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Microsoft</dc:creator>
+  <dc:description>Adds NETStandard2.0 support to .NET Framework. 
+029cf57733b7ec6c1dd8a13857e800b9a8d97192 
+When using NuGet 3.x this package requires at least version 3.4.</dc:description>
+  <dc:identifier>NETStandard.Library.NETFramework</dc:identifier>
+  <version>2.0.0-preview2-25405-01</version>
+  <keywords></keywords>
+  <lastModifiedBy>NuGet.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;Microsoft Windows NT 6.3.9600.0;</lastModifiedBy>
+</coreProperties>
