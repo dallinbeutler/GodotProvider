@@ -3,6 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="testfile.fsx" />
     <Compile Include="ast.fsx" />
     <Compile Include="TSCNParser.fsx" />
   </ItemGroup>

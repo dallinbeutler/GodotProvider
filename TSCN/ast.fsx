@@ -13,8 +13,9 @@ type NodeKVP =
 type ResourceType =
 |ExtResource
 |SubResource
-|Node
+|Node of NodeKVP List
 |Connection
+|GDScene 
 
 // type KVP = string * string
 // type NodeKVP = NodeKey * string

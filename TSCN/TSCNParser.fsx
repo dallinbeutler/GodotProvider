@@ -4,6 +4,7 @@ open System
 #r @"C:\Users\111770\.nuget\packages\fparsec\1.0.3\lib\netstandard1.6\FParsecCS.dll"
 #r @"C:\Users\111770\.nuget\packages\fparsec\1.0.3\lib\netstandard1.6\FParsec.dll"
 #load "ast.fsx"
+#load "testfile.fsx"
 //open FParsec.Primitives
 open FParsec
 open Ast
@@ -79,13 +80,18 @@ test pNodeKeys "name"
 // let kvp =  (manyCharsTill jchar (pchar '=') .>>. (quotedString)) |>> KVP
 let kvpQuotes =  (pNodeKeys  .>> (pchar '=') .>>. (quotedString) .>> spaces) <?>"node key value pair" |>> (fun (f,s)->f s)
 
+let resoureStart=  (skipManyTill anyChar ( lookAhead(skipChar '['<|> eof )))//manyCharsTill eof //anyChar ((pchar ']' ) <|> (eof ) )
 let pHeadingType =
-        (pstring "ext_resource" >>% ExtResource)
+    let left = (pchar '[' .>> spaces) <?> "Resource start"
+    let right = pchar ']' .>> spaces
+    left
+    >>.((pstring "ext_resource" >>% ExtResource)
     <|> (pstring "sub_resource" >>% SubResource)
-    <|> (pstring "node" >>% Node) 
+    <|> (pstring "node"  >>. spaces >>. manyTill kvpQuotes right |>> Node ) 
     <|> (pstring "connection" >>% Connection)
+    <|> (pstring "gd_scene" >>% GDScene))
     .>> spaces <?> "heading type"
-
+    .>> manyCharsTill (anyChar) resoureStart
 
 //let pContent = ((manyChars jchar)  .>> (pchar '=') .>>. (manyChars jchar) .>> spaces .>> anyOf[ newline ; eof] )
 //test pContent "mesh = SubResource(9)"
@@ -99,24 +105,22 @@ mesh = SubResource(9)
 [node name="Hand" parent="Arm" type="Spatial"]
 [node name="Finger" parent="Arm/Hand" type="Spatial"]
 """
-let resoureStart=  (skipManyTill anyChar ( lookAhead(skipChar '['<|> eof )))//manyCharsTill eof //anyChar ((pchar ']' ) <|> (eof ) )
-let pHeading = 
-    let left = (pchar '[' .>> spaces) <?> "Resource start"
-    let right = pchar ']' .>> spaces
-    // left >>.(pHeadingType .>>. manyTill kvp (pchar ']'))
-    // left >>. pHeadingType .>>. manyTill kvp right .>> manyCharsTill anyChar newline 
-    // left >>. pHeadingType .>>. manyTill kvp right .>> manyCharsTill (anyChar) ((pchar '[') <|> newline )
-    // left >>. pHeadingType .>>. manyTill kvpQuotes right .>> manyCharsTill (anyChar) newline//((pchar '[') )
-    left >>. pHeadingType .>>. manyTill kvpQuotes right .>> manyCharsTill (anyChar) resoureStart//((pchar '[') )
+// let pHeading = 
+//     let left = (pchar '[' .>> spaces) <?> "Resource start"
+//     let right = pchar ']' .>> spaces
+//     // left >>.(pHeadingType .>>. manyTill kvp (pchar ']'))
+//     // left >>. pHeadingType .>>. manyTill kvp right .>> manyCharsTill anyChar newline 
+//     // left >>. pHeadingType .>>. manyTill kvp right .>> manyCharsTill (anyChar) ((pchar '[') <|> newline )
+//     // left >>. pHeadingType .>>. manyTill kvpQuotes right .>> manyCharsTill (anyChar) newline//((pchar '[') )
+//     left >>. pHeadingType .>>. manyTill kvpQuotes right .>> manyCharsTill (anyChar) resoureStart//((pchar '[') )
 
-// test pHeading "[node name=\"Player\" type=\"Spatial\"] ; The scene root"
+// // test pHeading "[node name=\"Player\" type=\"Spatial\"] ; The scene root"
 
 
 
 let  pHeadingContent = pHeadingType  
 
-test pHeadingContent "sdfasdf["
-test (manyTill pHeading ( (eof) )) teststring
-//test (manyTill pHeading resoureStart ) teststring
+//test pHeadingContent "sdfasdf["
+//test (manyTill pHeading ( (eof) )) teststring
 
-//test(manyTill pHeadingContent eof) teststring
+test (manyTill pHeadingType ( (eof) )) TestFile.testfile
