@@ -87,7 +87,7 @@ let pHeadingType =
     left
     >>.((pstring "ext_resource" >>% ExtResource)
     <|> (pstring "sub_resource" >>% SubResource)
-    <|> (pstring "node"  >>. spaces >>. manyTill kvpQuotes right |>> Node ) 
+    <|> (pstring "node"  >>. spaces >>. manyTill kvpQuotes right |>> NodeResource ) 
     <|> (pstring "connection" >>% Connection)
     <|> (pstring "gd_scene" >>% GDScene))
     .>> spaces <?> "heading type"
@@ -124,3 +124,23 @@ let  pHeadingContent = pHeadingType
 //test (manyTill pHeading ( (eof) )) teststring
 
 test (manyTill pHeadingType ( (eof) )) TestFile.testfile
+
+// let tree = 
+//     match run (manyTill pHeadingType ( (eof) )) TestFile.testfile with
+//       | Failure(errorMsg, _, _) -> printfn "Failure: %s" errorMsg ;[]
+//       | Success(result, _, _)   -> 
+//         printfn "Success: %A" result  
+//         let parsedNodes = 
+//             result 
+//             |> List.choose(fun x ->
+//             match x with 
+//             |NodeResource y-> Some y
+//             |_->None)
+//             |> List.map Ast.formSimpleParsed
+//         parsedNodes |> formTree 
+
+
+//printfn "%A" tree
+ 
+    
+
